@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/base/_design.scss","../sass/components/_Navbar.scss","../sass/pages/_home.scss","../sass/base/_color.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;;AAGF;AAAA;AAAA;EAGE;;;ACVF;EACE;EACA;;AAII;EACE;;;ACJN;EACE,kBCaa;EDZb;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;;AAOF;EACE;EACA;EACA,OCtBiB","file":"main.css"}

@@ -1,0 +1,37 @@
+@use "../base/color" as color;
+
+.section-home {
+  .container-home-page {
+    background-color: color.$Very-light-red;
+    height: 90vh;
+    border-bottom-left-radius: 100px;
+    overflow: hidden;
+
+    .container-text {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .container-items {
+    .container-title {
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: color.$Very-dark-grayis-hblue;
+      }
+    }
+  }
+}

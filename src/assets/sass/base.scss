@@ -1,2 +1,7 @@
 @use "./base/color" as color;
+@use "./base/design" as design;
+
 @use "./components/buttons" as button;
+@use "./components/Navbar" as navbar;
+
+@use "./pages/home" as home;
