@@ -67,6 +67,8 @@ function Home() {
             </div>
           </div>
         </main>
+
+        <article></article>
       </section>
     </>
   );
