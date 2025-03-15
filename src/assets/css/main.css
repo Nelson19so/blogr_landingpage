@@ -72,11 +72,12 @@ nav .container-ul ul li a:hover {
 }
 .section-home .container-home-page .container-text h1 {
   font-size: 50px;
+  padding: 4%;
   font-weight: 600;
 }
 @media only screen and (max-width: 768px) {
   .section-home .container-home-page .container-text h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 .section-home .container-home-page .container-text p {
