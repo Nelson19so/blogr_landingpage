@@ -1,1 +1,8 @@
+@use "../base/color" as color;
 
+.btn-signup-link {
+  background-color: color.$Very-light-red;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
