@@ -36,26 +36,38 @@ export default function Navbar() {
 
         {/* navbar page links */}
         <div
-          className={`container-ul md:w-200 md:p-3 p-8 md:bg-transparent bg-white w-80 rounded-md md:shadow-none shadow-xl md:mt-0 mt-3 md:justify-normal flex justify-self-center ${
+          className={`container-ul md:w-200 md:p-3 p-8 md:bg-transparent bg-white w-80 rounded-xl md:mt-0 mt-3 md:justify-normal flex justify-self-center ${
             smallScreenNav ? "active-nav" : ""
           }`}
         >
-          <ul className="md:w-full md:flex md:justify-start text-center">
-            <li className="md:ml-10 md:text-white text-dark mb-5 text-center">
-              <a href="#">Product</a>
-            </li>
-            <li className="md:ml-10 md:text-white text-dark mb-5 text-center">
-              <a href="#">Company</a>
-            </li>
-            <li className="md:ml-10 md:text-white text-dark text-center">
-              <a href="#">Connect</a>
-            </li>
-          </ul>
+          <div className="container-items w-full">
+            <ul className="md:w-full mb-6 md:flex md:justify-start block text-center">
+              <li className="md:ml-10 md:text-white text-dark mb-5 text-center">
+                <a href="#">Product</a>
+              </li>
+              <li className="md:ml-10 md:text-white text-dark mb-5 text-center">
+                <a href="#">Company</a>
+              </li>
+              <li className="md:ml-10 md:text-white text-dark text-center">
+                <a href="#">Connect</a>
+              </li>
+            </ul>
 
-          {/* <div className="container-btn w-100% h-max md:hidden block">
-            <button className="text-center w-100%">Login</button>
-            <button className="btn-signup-link text-white">Sign Up</button>
-          </div> */}
+            <div className="container-btn-monibe w-100% h-max md:hidden block pt-4 bottom-0">
+              <center>
+                <div className="containr-btn w-full mb-5">
+                  <button className="login-link-btn text-center w-100%">
+                    Login
+                  </button>
+                </div>
+                <div className="containr-btn w-full">
+                  <button className="btn-signup-link text-white">
+                    Sign Up
+                  </button>
+                </div>
+              </center>
+            </div>
+          </div>
         </div>
 
         <div className="container-btn h-full md:w-80"></div>

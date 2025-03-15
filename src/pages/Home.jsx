@@ -14,7 +14,7 @@ function Home() {
           </div>
 
           <div className="container-btns mt-10">
-            <button className="mr-5 bg-white font-bold p-2 rounded-2xl pl-6 pr-6">
+            <button className="btn-start-free-home mr-5 bg-white font-bold p-2 rounded-2xl pl-6 pr-6">
               Start for Free
             </button>
             <button className="bg-transparent border hover:bg-white text-white border-white btn p-2 pl-6 pr-6 rounded-2xl">

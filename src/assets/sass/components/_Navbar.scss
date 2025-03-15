@@ -4,8 +4,13 @@ nav {
   width: 100vw;
   height: 13vh;
 
+  .container-btn-monibe {
+    border-top: 0.1px solid color.$Grayish-blue;
+  }
+
   .container-ul {
     transition: 0.3s;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
 
     @media only screen and (max-width: 768px) {
       height: 0;
