@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* navbar page links */}
         <div
-          className={`container-ul md:w-200 md:p-3 p-8 md:bg-transparent bg-white w-85 rounded-md md:shadow-none shadow-xl md:mt-0 mt-5 md:justify-normal flex justify-self-center ${
+          className={`container-ul md:w-200 md:p-3 p-8 md:bg-transparent bg-white w-80 rounded-md md:shadow-none shadow-xl md:mt-0 mt-3 md:justify-normal flex justify-self-center ${
             smallScreenNav ? "active-nav" : ""
           }`}
         >
