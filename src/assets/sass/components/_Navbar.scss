@@ -1,11 +1,29 @@
+@use "../base/color" as color;
+
 nav {
   width: 100vw;
   height: 13vh;
 
-  ul {
-    li {
-      a {
-        font-weight: 600;
+  .container-ul {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+    ul {
+      padding: 0;
+      width: 100%;
+
+      li {
+        a {
+          font-weight: 600;
+          transition: 1s;
+          display: block;
+          width: 100%;
+
+          &:hover {
+            color: color.$Very-dark-grayis-hblue;
+          }
+        }
       }
     }
   }

@@ -15,15 +15,35 @@ nav {
   width: 100vw;
   height: 13vh;
 }
-nav ul li a {
+@media only screen and (max-width: 768px) {
+  nav .container-ul {
+    display: none;
+  }
+}
+nav .container-ul ul {
+  padding: 0;
+  width: 100%;
+}
+nav .container-ul ul li a {
   font-weight: 600;
+  transition: 1s;
+  display: block;
+  width: 100%;
+}
+nav .container-ul ul li a:hover {
+  color: hsl(207, 13%, 34%);
 }
 
 .section-home .container-home-page {
   background-color: hsl(13, 100%, 72%);
-  height: 90vh;
   border-bottom-left-radius: 100px;
   overflow: hidden;
+  padding-bottom: 10%;
+}
+@media only screen and (max-width: 568px) {
+  .section-home .container-home-page {
+    padding-bottom: 25%;
+  }
 }
 .section-home .container-home-page .container-text {
   width: 100%;
@@ -35,6 +55,11 @@ nav ul li a {
 .section-home .container-home-page .container-text h1 {
   font-size: 50px;
   font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .section-home .container-home-page .container-text h1 {
+    font-size: 45px;
+  }
 }
 .section-home .container-home-page .container-text p {
   font-size: 17px;

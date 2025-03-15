@@ -3,9 +3,13 @@
 .section-home {
   .container-home-page {
     background-color: color.$Very-light-red;
-    height: 90vh;
     border-bottom-left-radius: 100px;
     overflow: hidden;
+    padding-bottom: 10%;
+
+    @media only screen and (max-width: 568px) {
+      padding-bottom: 25%;
+    }
 
     .container-text {
       width: 100%;
@@ -17,6 +21,10 @@
       h1 {
         font-size: 50px;
         font-weight: 600;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 45px;
+        }
       }
 
       p {

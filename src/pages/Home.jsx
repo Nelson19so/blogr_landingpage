@@ -7,14 +7,19 @@ function Home() {
     <>
       <Navbar />
       <section id="home" className="section-home">
-        <div className="container-home-page w-full items-center text-center pt-50 text-white">
-          <div className="container-text">
+        <div className="container-home-page w-full items-center text-center pt-50">
+          <div className="container-text text-white">
             <h1 className="title">A modern publishing platform</h1>
             <p>Grow your audience and build your online brand</p>
           </div>
 
-          <div className="container-btns">
-            <button type="button">hello</button>
+          <div className="container-btns mt-10">
+            <button className="mr-5 bg-white font-bold p-2 rounded-2xl pl-6 pr-6">
+              Start for Free
+            </button>
+            <button className="bg-transparent border hover:bg-white text-white border-white btn p-2 pl-6 pr-6 rounded-2xl">
+              Learn more
+            </button>
           </div>
         </div>
 
@@ -24,7 +29,16 @@ function Home() {
               <h1 className="text-center">Designed for the future</h1>
             </div>
             <div className="container-items md:flex md:justify-between w-full mt-5">
-              <div className="md:w-60% mb-10 w-full md:pl-30 mt-15 md:text-left text-center pl-8 pr-8">
+              <div className="md:w-40% w-full container-img md:hidden block">
+                <img
+                  src={editorDesktop}
+                  alt=""
+                  className="md:ml-30 mb-5 flex justify-self-center"
+                  width="300"
+                />
+              </div>
+
+              <div className="md:w-60% mb-10 w-full md:pl-30 mt-5 md:text-left text-center pl-8 pr-8">
                 <article>
                   <div className="article-one">
                     <div className="container-title">
@@ -61,7 +75,7 @@ function Home() {
                 </article>
               </div>
 
-              <div className="md:w-40% w-full container-img">
+              <div className="md:w-40% w-full container-img md:display hidden">
                 <img src={editorDesktop} alt="" className="md:ml-30 mb-5" />
               </div>
             </div>
