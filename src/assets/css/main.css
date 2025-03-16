@@ -124,6 +124,22 @@ nav .container-ul ul li a:hover {
   overflow: hidden;
 }
 
+.container-footer {
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+}
+@media only screen and (max-width: 678px) {
+  .container-footer .container-padder .container-items-footer {
+    margin-top: 10%;
+  }
+}
+.container-footer .container-padder .container-items-footer ul li a {
+  color: hsl(240, 2%, 79%);
+}
+.container-footer .container-padder .container-items-footer ul li a:hover {
+  text-decoration: underline;
+}
+
 .section-home .container-home-page {
   background-color: hsl(13, 100%, 72%);
   border-bottom-left-radius: 100px;
@@ -258,6 +274,16 @@ nav .container-ul ul li a:hover {
 }
 .section-home .container-items- .container-padder .container-img-phone img {
   width: 80%;
+}
+.section-home .container-laptop-page h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(237, 23%, 32%);
+}
+.section-home .container-laptop-page p {
+  margin-top: 15px;
+  color: hsl(207, 13%, 34%);
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=main.css.map */

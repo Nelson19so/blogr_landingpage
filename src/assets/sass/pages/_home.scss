@@ -149,4 +149,18 @@
       }
     }
   }
+
+  .container-laptop-page {
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      color: color.$Very-dark-desaturated-blue;
+    }
+
+    p {
+      margin-top: 15px;
+      color: color.$Very-dark-grayis-hblue;
+      font-size: 17px;
+    }
+  }
 }

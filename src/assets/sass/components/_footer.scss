@@ -1,0 +1,26 @@
+@use "../base/color" as color;
+
+.container-footer {
+  background-color: color.$Very-dark-black-blue;
+  border-top-right-radius: 100px;
+
+  .container-padder {
+    .container-items-footer {
+      @media only screen and (max-width: 678px) {
+        margin-top: 10%;
+      }
+
+      ul {
+        li {
+          a {
+            color: color.$Grayish-blue;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,9 @@ import editorDesktop from "../../public/images/illustration-editor-desktop.svg";
 import editorMobile from "../../public/images/illustration-editor-mobile.svg";
 import illustrationPhone from "../../public/images/illustration-phones.svg";
 import patternCircle from "../../public/images/bg-pattern-circles.svg";
+import laptop from "../../public/images/illustration-laptop-desktop.svg";
+import laptopSm from "../../public/images/illustration-laptop-mobile.svg";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -111,7 +114,49 @@ function Home() {
             </div>
           </div>
         </article>
+
+        <main>
+          <div className="container-laptop-page w-full mt-20">
+            <div className="container-padder md:flex md:justify-between">
+              <div className="container-img-laptop float-lef">
+                <img
+                  src={laptop}
+                  alt="laptop"
+                  className="ml-8 md:ml-0 md:block hidden"
+                />
+                <img src={laptopSm} alt="laptop" className="md:hidden block" />
+              </div>
+
+              <div className="contaner-articles md:p-20 p-10 md:w-300 md:text-left text-center">
+                <div className="article-padder">
+                  <div className="article-one">
+                    <h2>Free, open, simple</h2>
+                    <p>
+                      Blogr is a free and open source application backed by a
+                      large community of helpful developers. It supports
+                      features such as code syntax highlighting, RSS feeds,
+                      social media integration, third-party commenting tools,
+                      and works seamlessly with Google Analytics. The
+                      architecture is clean and is relatively easy to learn.
+                    </p>
+                  </div>
+
+                  <div className="article-two mt-10">
+                    <h2>Powerful tooling</h2>
+                    <p>
+                      Batteries included. We built a simple and straightforward
+                      CLI tool that makes customization and deployment a breeze,
+                      but capable of producing even the most complicated sites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </section>
+
+      <Footer />
     </>
   );
 }
