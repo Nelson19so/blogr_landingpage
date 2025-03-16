@@ -253,6 +253,7 @@ nav .container-ul ul li a:hover {
     margin-top: -4%;
     display: flex;
     justify-items: center;
+    margin-left: 10%;
   }
 }
 .section-home .container-items- .container-padder .container-img-phone img {
