@@ -4,13 +4,17 @@ nav {
   width: 100vw;
   height: 13vh;
 
-  .container-btn-monibe {
+  .container-btn-mobile {
     border-top: 0.1px solid color.$Grayish-blue;
   }
 
   .container-ul {
     transition: 0.3s;
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 45px 45px 50px rgba(0, 0, 0, 0.3);
+
+    @media only screen and (min-width: 768px) {
+      box-shadow: none;
+    }
 
     @media only screen and (max-width: 768px) {
       height: 0;
@@ -28,9 +32,19 @@ nav {
           transition: 1s;
           display: block;
           width: 100%;
+          color: color.$White-two;
 
           &:hover {
-            color: color.$Very-dark-grayis-hblue;
+            text-decoration: underline;
+            color: color.$White;
+          }
+
+          @media only screen and (max-width: 768px) {
+            color: color.$Very-dark-black-blue;
+
+            &:hover {
+              color: color.$Very-dark-grayis-hblue;
+            }
           }
         }
       }

@@ -6,14 +6,54 @@
   border-radius: 30px;
   padding: 10px 35px;
   padding-bottom: 13px;
+  cursor: pointer;
+}
+
+.btn-signup-link-desktop {
+  color: color.$Very-light-red;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 35px;
+  padding-bottom: 13px;
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: color.$White;
+  }
 }
 
 .btn-start-free-home {
   color: color.$Very-light-red;
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: color.$White;
+  }
 }
 
 .login-link-btn {
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
   color: color.$Very-dark-grayis-hblue;
+}
+
+.login-link-btn-desktop {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-learn-more {
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+
+  &:hover {
+    color: color.$Very-light-red;
+  }
 }

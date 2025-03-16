@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import editorDesktop from "../../public/images/illustration-editor-desktop.svg";
+import editorMobile from "../../public/images/illustration-editor-mobile.svg";
+import illustrationPhone from "../../public/images/illustration-phones.svg";
+import patternCircle from "../../public/images/bg-pattern-circles.svg";
 
 function Home() {
   return (
@@ -14,10 +17,10 @@ function Home() {
           </div>
 
           <div className="container-btns mt-10">
-            <button className="btn-start-free-home mr-5 bg-white font-bold p-2 rounded-2xl pl-6 pr-6">
+            <button className="btn-start-free-home mr-5 bg-white font-bold p-3 rounded-3xl pl-6 pr-6">
               Start for Free
             </button>
-            <button className="bg-transparent border hover:bg-white text-white border-white btn p-2 pl-6 pr-6 rounded-2xl">
+            <button className="btn-learn-more bg-transparent border hover:bg-white text-white border-white btn p-3 pl-6 pr-6 rounded-3xl">
               Learn more
             </button>
           </div>
@@ -31,7 +34,7 @@ function Home() {
             <div className="container-items md:flex md:justify-between w-full mt-5">
               <div className="md:w-40% w-full container-img md:hidden block">
                 <img
-                  src={editorDesktop}
+                  src={editorMobile}
                   alt=""
                   className="md:ml-30 mb-5 flex justify-self-center"
                   width="300"
@@ -42,9 +45,9 @@ function Home() {
                 <article>
                   <div className="article-one">
                     <div className="container-title">
-                      <h1 className="title">
+                      <h3 className="title">
                         Introducing an extensible editor
-                      </h1>
+                      </h3>
                     </div>
                     <div className="container-articles mt-5">
                       <p className="text-gray-600">
@@ -61,7 +64,7 @@ function Home() {
 
                   <div className="article-two mt-10">
                     <div className="container-title">
-                      <h1 className="title">Robust content management</h1>
+                      <h3 className="title">Robust content management</h3>
                     </div>
                     <div className="containimgeditor-desktoper-articles mt-5">
                       <p className="text-gray-600">
@@ -75,14 +78,39 @@ function Home() {
                 </article>
               </div>
 
-              <div className="md:w-40% w-full container-img md:display hidden">
+              <div className="md:w-40% w-full container-img md:block hidden">
                 <img src={editorDesktop} alt="" className="md:ml-30 mb-5" />
               </div>
             </div>
           </div>
         </main>
 
-        <article></article>
+        <article>
+          <div className="container-items- w-full bg-dark md:mt-0 mt-10">
+            <div className="container-padder">
+              <div className="container-img-phone w-30% md:ml-35">
+                <img src={illustrationPhone} alt="phone" />
+              </div>
+
+              <div className="pattern-circle container-left md:h-full md:w-50">
+                <img src={patternCircle} alt="igm-background" />
+              </div>
+
+              <div className="container-articles-phone md:float-left h-full">
+                <div className="containr-padder">
+                  <h1>State of the Art Infrastructure</h1>
+
+                  <p>
+                    With reliability and speed in mind, worldwide data centers
+                    provide the backbone for ultra-fast connectivity. This
+                    ensures your site will load instantly, no matter where your
+                    readers are, keeping your site competitive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
     </>
   );

@@ -15,8 +15,8 @@ export default function Navbar() {
       <nav className="md:flex md:justify-between absolute bg-transparent pt-10">
         <div className="container-logo h-full md:w-1/5 flex justify-between">
           {/* Home bar logo */}
-          <div className="container-logo md:w-full w-1/2 md:flex float-left md:justify-end h-full pl-10">
-            <a href="">
+          <div className="container-logo md:w-full bg-transparent w-1/2 md:flex float-left md:justify-end h-full pl-10">
+            <a href="#">
               <img src={logo} alt="" className="logo" />
             </a>
           </div>
@@ -42,24 +42,28 @@ export default function Navbar() {
         >
           <div className="container-items w-full">
             <ul className="md:w-full mb-6 md:flex md:justify-start block text-center">
-              <li className="md:ml-10 md:text-white text-dark mb-5 text-center">
+              <li className="md:ml-10 text-dark mb-5 text-center">
                 <a href="#">Product</a>
               </li>
-              <li className="md:ml-10 md:text-white text-dark mb-5 text-center">
+
+              <li className="md:ml-10 text-dark mb-5 text-center">
                 <a href="#">Company</a>
               </li>
-              <li className="md:ml-10 md:text-white text-dark text-center">
+
+              <li className="md:ml-10 text-dark text-center">
                 <a href="#">Connect</a>
               </li>
             </ul>
 
-            <div className="container-btn-monibe w-100% h-max md:hidden block pt-4 bottom-0">
+            {/* mobile button */}
+            <div className="container-btn-mobile h-max md:hidden block pt-4 bottom-0">
               <center>
                 <div className="containr-btn w-full mb-5">
                   <button className="login-link-btn text-center w-100%">
                     Login
                   </button>
                 </div>
+
                 <div className="containr-btn w-full">
                   <button className="btn-signup-link text-white">
                     Sign Up
@@ -70,7 +74,22 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="container-btn h-full md:w-80"></div>
+        {/* desktop button */}
+        <div className="container-btn h-full md:w-80 md:block hidden">
+          <div className="container-padder flex justify-items-start">
+            <div className="containr-btn mb-5 pt-2">
+              <button className="login-link-btn-desktop text-center w-100% text-white">
+                Login
+              </button>
+            </div>
+
+            <div className="containr-btn ml-4">
+              <button className="btn-signup-link-desktop bg-white">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
       </nav>
     </>
   );

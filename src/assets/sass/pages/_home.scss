@@ -20,7 +20,7 @@
 
       h1 {
         font-size: 50px;
-        padding: 4%;
+        padding: 0 4%;
         font-weight: 600;
 
         @media only screen and (max-width: 768px) {
@@ -37,9 +37,114 @@
   .container-items {
     .container-title {
       h1 {
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 600;
         color: color.$Very-dark-grayis-hblue;
+      }
+
+      h3 {
+        font-weight: 600;
+        color: color.$Very-dark-grayis-hblue;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .container-items- {
+    background-color: color.$Very-dark-gray-blue;
+    padding: 4% 20px;
+    overflow: hidden;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+    @media only screen and (min-width: 768px) {
+      // min-height: 60vh;
+      max-height: 55vh;
+    }
+
+    @media only screen and (min-width: 768px) {
+      padding: 0 5%;
+    }
+
+    .container-padder {
+      height: 100%;
+      width: 100%;
+
+      .container-articles-phone {
+        padding: 35px;
+        // padding-right: 6%;
+        margin-top: -30%;
+        width: 50%;
+        float: right;
+
+        @media only screen and (max-width: 768px) {
+          padding-right: 0;
+
+          margin-top: -0%;
+          width: 100%;
+          float: none;
+        }
+
+        .containr-padder {
+          top: 0;
+
+          h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: color.$White;
+          }
+
+          p {
+            font-size: 17px;
+            margin-top: 2%;
+            color: color.$Grayish-blue;
+          }
+        }
+      }
+
+      .pattern-circle {
+        overflow: hidden;
+        width: 70%;
+        left: 0;
+
+        @media only screen and (min-width: 768px) {
+          margin-left: -10%;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-left: -5%;
+          width: 100% !important;
+          margin-top: -30%;
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          margin-top: -50%;
+          width: 100%;
+
+          @media only screen and (max-width: 768px) {
+            margin-top: -0%;
+            width: 80%;
+          }
+        }
+      }
+
+      .container-img-phone {
+        position: absolute;
+        left: 0;
+        margin-top: -8%;
+        z-index: 33;
+
+        @media only screen and (max-width: 768px) {
+          margin-top: -4%;
+          display: flex;
+          justify-items: center;
+        }
+
+        img {
+          width: 80%;
+        }
       }
     }
   }
