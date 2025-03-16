@@ -1,16 +1,20 @@
 @use "../base/color" as color;
 
 .btn-signup-link {
-  background-color: color.$Light-red;
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
   font-weight: 600;
   border-radius: 30px;
   padding: 10px 35px;
   padding-bottom: 13px;
   cursor: pointer;
-  transition: 1s;
+  transition: background-position 1s ease-in-out;
 
   &:hover {
-    background-color: color.$Very-light-red;
+    background-position: 0 0;
   }
 }
 
