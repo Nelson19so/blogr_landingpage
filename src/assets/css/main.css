@@ -64,7 +64,7 @@ body {
 .btn-learn-more {
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 .btn-learn-more:hover {
   color: hsl(13, 100%, 72%);
