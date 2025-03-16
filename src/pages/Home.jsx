@@ -35,8 +35,8 @@ function Home() {
               <div className="md:w-40% w-full container-img md:hidden block">
                 <img
                   src={editorMobile}
-                  alt=""
-                  className="md:ml-30 mb-5 flex justify-self-center"
+                  alt="editormobile"
+                  className="mb-5 flex justify-self-center"
                   width="300"
                 />
               </div>
@@ -79,7 +79,7 @@ function Home() {
               </div>
 
               <div className="md:w-40% w-full container-img md:block hidden">
-                <img src={editorDesktop} alt="" className="md:ml-30 mb-5" />
+                <img src={editorDesktop} alt="" className="mb-5" />
               </div>
             </div>
           </div>
