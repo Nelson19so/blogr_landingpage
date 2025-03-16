@@ -1,5 +1,6 @@
 import logo from "../../public/images/logo.svg";
 import harmburger from "../../public/images/icon-hamburger.svg";
+import close from "../../public/images/icon-close.svg";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -24,12 +25,21 @@ export default function Navbar() {
           {/* harmbugger for toggling mobile navbar */}
           <div className="container-harmbugger md:hidden w-1/2 h-full pt-3 float-right text-right pr-10">
             <button className="text-white" onClick={handleNavbar}>
-              <img
-                src={harmburger}
-                alt="harmburger"
-                style={{ cursor: "pointer" }}
-                title="drop-nav"
-              />
+              {smallScreenNav ? (
+                <img
+                  src={close}
+                  alt="close"
+                  style={{ cursor: "pointer" }}
+                  title="close-nav"
+                />
+              ) : (
+                <img
+                  src={harmburger}
+                  alt="harmburger"
+                  style={{ cursor: "pointer" }}
+                  title="drop-nav"
+                />
+              )}
             </button>
           </div>
         </div>
