@@ -7,6 +7,11 @@
   padding: 10px 35px;
   padding-bottom: 13px;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: color.$White;
+  }
 }
 
 .btn-signup-link-desktop {
@@ -55,5 +60,6 @@
 
   &:hover {
     color: color.$Very-light-red;
+    background-color: color.$White;
   }
 }
