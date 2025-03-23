@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="container-footer w-full">
-          <div className="container-padder w-full md:flex md:justify-evenly p-20">
+          <div className="container-padder w-full md:flex md:justify-evenly md:p-20 p-10 ">
             <div className="container-items-footer md:text-left text-center md:block flex justify-center">
               <div className="container-logo">
                 <img src={logo} alt="blogr-logo" />

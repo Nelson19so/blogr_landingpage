@@ -52,16 +52,102 @@ export default function Navbar() {
         >
           <div className="container-items w-full">
             <ul className="md:w-full mb-6 md:flex md:justify-start block text-center">
-              <li className="md:ml-10 text-dark mb-5 text-center">
+              <li className="text-dark mb-5 text-center">
                 <a href="#">Product</a>
+
+                <div className="contaner-ul-dropdown mt-5 md:bg-white bg-gray-100 md:shadow-2xl">
+                  <div className="container-ul-dropdown-padder w-full">
+                    <ul>
+                      <li className="md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Overview
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Pricing
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Marketplace
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Features
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Integrations
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
 
-              <li className="md:ml-10 text-dark mb-5 text-center">
+              <li className="text-dark mb-5 text-center">
                 <a href="#">Company</a>
+
+                <div className="contaner-ul-dropdown mt-5 md:bg-white bg-gray-100 md:shadow-2xl">
+                  <div className="container-ul-dropdown-padder w-full">
+                    <ul>
+                      <li className="md:text-left">
+                        <a href="#" className="link-drop-down">
+                          About
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Pricing
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Team
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Blog
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Careers
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
 
-              <li className="md:ml-10 text-dark text-center">
+              <li className="text-dark text-center">
                 <a href="#">Connect</a>
+
+                <div className="contaner-ul-dropdown mt-5 md:bg-white bg-gray-100 md:shadow-2xl">
+                  <div className="container-ul-dropdown-padder w-full">
+                    <ul>
+                      <li className="md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Contact
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          Newsletter
+                        </a>
+                      </li>
+                      <li className="mt-1 md:text-left">
+                        <a href="#" className="link-drop-down">
+                          LinkedIn
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
             </ul>
 

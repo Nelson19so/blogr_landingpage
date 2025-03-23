@@ -80,7 +80,7 @@ nav .container-btn-mobile {
 }
 nav .container-ul {
   transition: 0.3s;
-  box-shadow: 45px 45px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 45px 50px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (min-width: 768px) {
   nav .container-ul {
@@ -97,6 +97,55 @@ nav .container-ul {
 nav .container-ul ul {
   padding: 0;
   width: 100%;
+}
+nav .container-ul ul li {
+  position: relative;
+  width: 20%;
+  text-align: center;
+  margin-right: 4px;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  nav .container-ul ul li {
+    width: 100%;
+    height: auto;
+  }
+}
+nav .container-ul ul li .contaner-ul-dropdown {
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+  width: max-content;
+  position: absolute;
+  width: 100%;
+  transition: 1s;
+}
+@media only screen and (min-width: 769px) {
+  nav .container-ul ul li .contaner-ul-dropdown {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav .container-ul ul li .contaner-ul-dropdown {
+    position: static;
+    width: 100%;
+  }
+}
+nav .container-ul ul li .contaner-ul-dropdown .container-ul-dropdown-padder {
+  width: 100%;
+  padding: 20px 25px;
+}
+nav .container-ul ul li .contaner-ul-dropdown .container-ul-dropdown-padder .link-drop-down {
+  color: rgb(81, 81, 81) !important;
+  font-size: 15px;
+  width: 100;
+  display: block;
+}
+nav .container-ul ul li .contaner-ul-dropdown .container-ul-dropdown-padder .link-drop-down:hover {
+  color: hsl(207, 13%, 34%) !important;
+}
+nav .container-ul ul li:hover .contaner-ul-dropdown {
+  display: block;
 }
 nav .container-ul ul li a {
   font-weight: 600;

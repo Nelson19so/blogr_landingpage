@@ -122,7 +122,7 @@ function Home() {
                 <img
                   src={laptop}
                   alt="laptop"
-                  className="ml-8 md:ml-0 md:block hidden"
+                  className="ml-8 md:ml-0 md:block hidden mt-18"
                 />
                 <img src={laptopSm} alt="laptop" className="md:hidden block" />
               </div>
@@ -156,7 +156,9 @@ function Home() {
         </main>
       </section>
 
-      <Footer />
+      <div className="container-footer-home mt-10">
+        <Footer />
+      </div>
     </>
   );
 }
